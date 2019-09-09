@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      IAC Calculator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page5">
+  <h2 id="iACCalculator-heading6" style="color:#000000;text-align:center;">
+    Enter your details:
+  </h2>
+  <form id="iACCalculator-form7">
+    <ion-item id="iACCalculator-input11">
+      <ion-label>
+        Hip
+      </ion-label>
+      <ion-input type="number" placeholder="CM" #quadril></ion-input>
+    </ion-item>
+    <ion-item id="iACCalculator-input12">
+      <ion-label>
+        Height
+      </ion-label>
+      <ion-input type="number" placeholder="CM" #altura></ion-input>
+    </ion-item>
+  </form>
+  <button id="iACCalculator-button3" ion-button color="positive" block (click)="calculaIAC(quadril, peso)">
+    Calculate
+  </button>
+  <h3 id="iACCalculator-heading7" style="color:#000000;">
+    Result: {{ percentGordura }}
+  </h3>
+  <div id="iACCalculator-markdown9" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">
+      Como interpretar o resultado da Adiposidade:
+    </p>
+  </div>
+  <div id="iACCalculator-markdown10" style="text-align:center;" class="show-list-numbers-and-dots">
+    <pre>
+      <code>
+        Homens: De 8 a 20 - Normal De 21 a 25 - Sobrepeso Acima de 15 - Obesidade Mulheres: 21 a 32 - Normal 33 a 38 - Sobrepeso 38 acima - Obesidade
+      </code>
+    </pre>
+  </div>
+</ion-content>
