@@ -14,10 +14,10 @@ export class IACCalculatorPage {
 
   calculaIAC(quadril, altura): void{
     let alturaM = (altura / 100)
-    let aux = Math.sqrt(alturaM);
-    console.log(aux);
-    let aux2 = aux * altura;
-    this.iac = (quadril / aux2) - 18;
+    let aux = Math.sqrt(alturaM)
+    console.log(aux)
+    let aux2 = aux * altura
+    this.iac = (quadril / aux2) - 18
   }
 
 }
