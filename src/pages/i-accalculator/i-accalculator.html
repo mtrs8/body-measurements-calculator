@@ -23,11 +23,11 @@
       <ion-input type="number" placeholder="CM" #altura></ion-input>
     </ion-item>
   </form>
-  <button id="iACCalculator-button3" ion-button color="positive" block (click)="calculaIAC(quadril, peso)">
+  <button id="iACCalculator-button3" ion-button color="positive" block (click)="calculaIAC(quadril, altura)">
     Calculate
   </button>
   <h3 id="iACCalculator-heading7" style="color:#000000;">
-    Result: {{ percentGordura }}
+    Result: {{ iac }}
   </h3>
   <div id="iACCalculator-markdown9" class="show-list-numbers-and-dots">
     <p style="color:#000000;">
@@ -36,9 +36,8 @@
   </div>
   <div id="iACCalculator-markdown10" style="text-align:center;" class="show-list-numbers-and-dots">
     <pre>
-      <code>
-        Homens: De 8 a 20 - Normal De 21 a 25 - Sobrepeso Acima de 15 - Obesidade Mulheres: 21 a 32 - Normal 33 a 38 - Sobrepeso 38 acima - Obesidade
-      </code>
+      <p id="instructions">Homens: 8 a 20 - Normal, De 21 a 25 - Sobrepeso Acima de 15 - Obesidade <br> Mulheres: De 21 a 32 - Normal 33 a 38 - Sobrepeso  38 acima - Obesidade
+      </p>
     </pre>
   </div>
 </ion-content>

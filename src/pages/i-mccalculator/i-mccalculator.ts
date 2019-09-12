@@ -12,9 +12,11 @@ export class IMCCalculatorPage {
   }
   resultIMC;
 
+
   calculaIMC(peso, altura): void{
     let alturaM = (altura / 100)
-    this.resultIMC = peso / (altura * altura)
+    let resultado = peso / (alturaM * alturaM)
+    this.resultIMC = parseFloat(resultado.toFixed(2))
     console.log(this.resultIMC)
   }
 

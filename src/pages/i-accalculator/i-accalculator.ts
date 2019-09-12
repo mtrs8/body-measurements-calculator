@@ -10,11 +10,14 @@ export class IACCalculatorPage {
   // should be each tab's root Page
   constructor(public navCtrl: NavController) {
   }
-  percentGordura;
+  iac;
 
   calculaIAC(quadril, altura): void{
-    let aux = Math.sqrt(altura) * altura;
-    this.percentGordura = (quadril / aux) - 18;
+    let alturaM = (altura / 100)
+    let aux = Math.sqrt(alturaM);
+    console.log(aux);
+    let aux2 = aux * altura;
+    this.iac = (quadril / aux2) - 18;
   }
 
 }
